@@ -6,13 +6,13 @@
 #    By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/28 23:56:43 by acarneir          #+#    #+#              #
-#    Updated: 2022/03/28 22:39:08 by acarneir         ###   ########.fr        #
+#    Updated: 2022/04/06 23:37:29 by acarneir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -g
 
 FT = ft_atoi.o \
 		ft_bzero.o \
