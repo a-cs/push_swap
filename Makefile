@@ -6,7 +6,7 @@
 #    By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/28 22:09:55 by acarneir          #+#    #+#              #
-#    Updated: 2022/03/28 22:53:02 by acarneir         ###   ########.fr        #
+#    Updated: 2022/04/14 00:28:20 by acarneir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,9 @@ INCLUDE = -I $(INCLUDE_DIR)
 
 SRC_DIR = ./src
 SRCS = main.c \
+		print_error.c \
+		args_utils.c \
+		normalize_stack.c \
 	
 
 OBJ_DIR = ./objs
