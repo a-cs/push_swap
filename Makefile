@@ -6,7 +6,7 @@
 #    By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/28 22:09:55 by acarneir          #+#    #+#              #
-#    Updated: 2022/04/14 01:17:41 by acarneir         ###   ########.fr        #
+#    Updated: 2022/04/15 22:12:56 by acarneir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,9 @@ SRCS = main.c \
 		args_utils.c \
 		normalize_stack.c \
 		push_utils.c \
-	
+		sort.c \
+		operations.c \
+		operations_utils.c \
 
 OBJ_DIR = ./objs
 OBJS := $(addprefix $(OBJ_DIR)/,$(SRCS:.c=.o))

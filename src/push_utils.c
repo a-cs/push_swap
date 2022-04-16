@@ -6,7 +6,7 @@
 /*   By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 01:15:28 by acarneir          #+#    #+#             */
-/*   Updated: 2022/04/14 01:19:31 by acarneir         ###   ########.fr       */
+/*   Updated: 2022/04/15 22:32:04 by acarneir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	clear_push(t_push *push)
 		free(push->stack_a);
 	if (push->stack_b != NULL)
 		free(push->stack_b);
+	if (push->op_list != NULL)
+		free(push->op_list);
 	if (push != NULL)
 		free(push);
 }
@@ -34,12 +36,12 @@ void	initialize_push(char **args, t_push *push)
 	push->size = i;
 	push->stack_a = ft_calloc(push->size, sizeof(int));
 	push->stack_b = ft_calloc(push->size, sizeof(int));
-	ft_printf("size = %d\n", push->size);
+	// ft_printf("size = %d\n", push->size);
 	i = 0;
 	while (i < push->size)
 	{
 		push->stack_a[i] = ft_atoi(args[i]);
-		ft_printf("a[%d] = %d\n", i, push->stack_a[i]);
+		// ft_printf("a[%d] = %d\n", i, push->stack_a[i]);
 		i++;
 	}
 	normalize_stack(push);
