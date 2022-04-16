@@ -6,13 +6,13 @@
 /*   By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/15 20:12:32 by acarneir          #+#    #+#             */
-/*   Updated: 2022/04/15 22:28:13 by acarneir         ###   ########.fr       */
+/*   Updated: 2022/04/15 22:38:36 by acarneir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-void	op_s(char c, int *stack, t_push *push)
+void	op_sx(char c, int *stack, t_push *push)
 {
 	int	temp;
 
@@ -28,7 +28,7 @@ void	op_s(char c, int *stack, t_push *push)
 	}
 }
 
-void	op_r(char c, int *stack, t_push *push)
+void	op_rx(char c, int *stack, t_push *push)
 {
 	int	i;
 	int	temp;
@@ -50,7 +50,7 @@ void	op_r(char c, int *stack, t_push *push)
 	}
 }
 
-void	op_rr(char c, int *stack, t_push *push)
+void	op_rrx(char c, int *stack, t_push *push)
 {
 	int	i;
 	int	temp;

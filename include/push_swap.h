@@ -6,7 +6,7 @@
 /*   By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 22:13:29 by acarneir          #+#    #+#             */
-/*   Updated: 2022/04/15 22:23:41 by acarneir         ###   ########.fr       */
+/*   Updated: 2022/04/15 22:38:48 by acarneir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ void	normalize_stack(t_push *push);
 int		get_stack_size(int *stack, int real_size);
 int		is_sorted(t_push *push);
 void	sort(t_push *push);
-void	op_s(char c, int *stack, t_push *push);
-void	op_r(char c, int *stack, t_push *push);
-void	op_rr(char c, int *stack, t_push *push);
+void	op_sx(char c, int *stack, t_push *push);
+void	op_rx(char c, int *stack, t_push *push);
+void	op_rrx(char c, int *stack, t_push *push);
 void	op_pb(t_push *push);
 void	op_pa(t_push *push);
 void	save_on_list(t_push *push, char *op);
