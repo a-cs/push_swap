@@ -6,7 +6,7 @@
 #    By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/28 22:09:55 by acarneir          #+#    #+#              #
-#    Updated: 2022/04/16 17:47:44 by acarneir         ###   ########.fr        #
+#    Updated: 2022/04/16 20:19:59 by acarneir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ SRCS := $(addprefix $(SRC_DIR)/,$(SRCS))
 all: $(NAME)
 
 $(NAME): $(LIBFT_PRINTF) $(OBJS)
-	$(CC) -lm $(OBJS) $(LIBFT_PRINTF) -o $(NAME)
+	$(CC) $(OBJS) $(LIBFT_PRINTF) -o $(NAME)
 
 $(LIBFT_PRINTF):
 	make -C $(LIBFT_PRINTF_DIR)
