@@ -6,7 +6,7 @@
 /*   By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 22:45:32 by acarneir          #+#    #+#             */
-/*   Updated: 2022/04/15 22:31:18 by acarneir         ###   ########.fr       */
+/*   Updated: 2022/04/16 19:51:01 by acarneir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,7 @@ void	is_valid_args_str(char *str)
 		if (str[i] != ' ' && !((str[i] == '+' || str[i] == '-')
 				&& ft_isdigit(str[i + 1])) && !ft_isdigit(str[i]))
 		{
-			// ft_printf("str = %c%c\n", str[i], str[i + 1]);
 			free(str);
-			// ft_printf("flag1 \n");
 			print_error();
 		}
 		i++;
@@ -91,11 +89,7 @@ void	has_duplicates(char **args)
 		while (args[j])
 		{
 			if (value == ft_atoi(args[j]))
-			{
-				// ft_printf("i = %d, arg[%d] = %d, v = %d\n", i, j, ft_atoi(args[j]), value);
-				// ft_printf("flag_d\n");
 				clear_args_and_print_error(args);
-			}
 			j++;
 		}
 		i++;

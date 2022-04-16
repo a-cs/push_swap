@@ -6,7 +6,7 @@
 /*   By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/15 19:45:58 by acarneir          #+#    #+#             */
-/*   Updated: 2022/04/16 01:02:49 by acarneir         ###   ########.fr       */
+/*   Updated: 2022/04/16 16:09:57 by acarneir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,17 +96,24 @@ static void	sort_5(t_push *push)
 	op_pa(push);
 }
 
-
-
 void	sort(t_push *push)
 {
 	if (push->size == 2)
 		sort_2(push);
-	if (push->size == 3)
+	else if (push->size == 3)
 		sort_3(push);
-	if (push->size == 4)
+	else if (push->size == 4)
 		sort_4(push);
-	if (push->size == 5)
+	else if (push->size == 5)
 		sort_5(push);
+	else
+	{
+		push->op_list_size = 15000;
+		push->op_list = ft_calloc(push->op_list_size + 1, sizeof(int));
+		if (push->size <= 100)
+			quick_sort(push, 4);
+		else
+			quick_sort(push, 8);
+	}
 	print_list(push);
 }

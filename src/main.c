@@ -6,7 +6,7 @@
 /*   By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 22:12:24 by acarneir          #+#    #+#             */
-/*   Updated: 2022/04/15 22:29:55 by acarneir         ###   ########.fr       */
+/*   Updated: 2022/04/16 19:55:44 by acarneir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ int	main(int argc, char **argv)
 	if (argc >= 2)
 	{
 		args_str = get_args_str(argc, argv);
-		// ft_printf("args_str -> %s\n", args_str);
 		is_valid_args_str(args_str);
 		args = ft_split(args_str, ' ');
 		free(args_str);

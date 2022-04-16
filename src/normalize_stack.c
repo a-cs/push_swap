@@ -6,7 +6,7 @@
 /*   By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 00:26:29 by acarneir          #+#    #+#             */
-/*   Updated: 2022/04/15 23:55:14 by acarneir         ###   ########.fr       */
+/*   Updated: 2022/04/16 19:50:01 by acarneir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,6 @@ void	normalize_stack(t_push *push)
 	{
 		push->stack_a[i] = push->stack_b[i];
 		push->stack_b[i] = 0;
-		// ft_printf("a[%d] = %d\tb[%d] = %d\n", i, push->stack_a[i], i, push->stack_b[i]);
 		i++;
 	}
 }
