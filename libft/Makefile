@@ -6,7 +6,7 @@
 #    By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/28 23:56:43 by acarneir          #+#    #+#              #
-#    Updated: 2022/04/06 23:37:29 by acarneir         ###   ########.fr        #
+#    Updated: 2022/04/16 20:24:31 by acarneir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,7 +60,7 @@ $(NAME): $(FT)
 	ar -rcs $(NAME) *.o
 
 %.o: %.c
-	gcc $(FLAGS) -c $< -o $@
+	cc $(FLAGS) -c $< -o $@
 
 clean: 
 	rm -rf *.o

@@ -6,14 +6,14 @@
 #    By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/18 15:53:37 by acarneir          #+#    #+#              #
-#    Updated: 2022/03/28 22:52:50 by acarneir         ###   ########.fr        #
+#    Updated: 2022/04/16 20:24:27 by acarneir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 NAME = libftprintf.a
 
-CC = gcc
+CC = cc
 
 FLAGS = -Wall -Wextra -Werror
 
