@@ -6,7 +6,7 @@
 /*   By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 22:13:29 by acarneir          #+#    #+#             */
-/*   Updated: 2022/04/15 22:38:48 by acarneir         ###   ########.fr       */
+/*   Updated: 2022/04/16 00:11:44 by acarneir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ void	is_valid_int(char **args);
 void	has_duplicates(char **args);
 void	initialize_push(char **args, t_push *push);
 void	clear_push(t_push *push);
+int		get_biggest_pos(int *stack, int size);
+int		get_smallest_pos(int *stack, int size);
 void	normalize_stack(t_push *push);
 int		get_stack_size(int *stack, int real_size);
 int		is_sorted(t_push *push);
@@ -44,5 +46,6 @@ void	op_pb(t_push *push);
 void	op_pa(t_push *push);
 void	save_on_list(t_push *push, char *op);
 void	print_list(t_push *push);
+void	bring_to_top(int *stack, t_push *push, int pos, char c);
 
 #endif

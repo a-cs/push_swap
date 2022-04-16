@@ -6,13 +6,13 @@
 /*   By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 00:26:29 by acarneir          #+#    #+#             */
-/*   Updated: 2022/04/15 20:05:41 by acarneir         ###   ########.fr       */
+/*   Updated: 2022/04/15 23:55:14 by acarneir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-static int	get_biggest_pos(int *stack, int size)
+int	get_biggest_pos(int *stack, int size)
 {
 	int	i;
 	int	pos;
@@ -28,7 +28,7 @@ static int	get_biggest_pos(int *stack, int size)
 	return (pos);
 }
 
-static int	get_smallest_pos(int *stack, int size)
+int	get_smallest_pos(int *stack, int size)
 {
 	int	i;
 	int	pos;
